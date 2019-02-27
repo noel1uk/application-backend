@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     @RequestMapping("/")
-    public void greeting() {
-
+    public String greeting() {
+        return "{id: 123, content: \"Hello\", city: \"New York\"}";
     }
 }
